@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: #1BB273;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.container {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    top: 50%;
+    margin-top: -160px;
+    transition: 0.8s;
+}
+.container .background {
+    position: absolute;
+}
+.container .background .bg1 {
+    position: absolute;
+    height: 400px;
+    width: 1000px;
+    background-color: #199F67;
+    top: 10px;
+    right: 10px;
+    transition: 0.8s;
+}
+.bg2 {
+    position: relative;
+    height: 400px;
+    width: 1000px;
+    border: white solid 1px;
+    top: -10px;
+    right: -10px;
+    transition: 0.8s;
+}
+.container .forms {
+    position: relative;
+}
+.container .forms .info {
+    display: flex;
+    opacity: 1;
+    transition: 0.8s;
+}
+.container .forms .info .items {
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    opacity: 1;
+}
+.container .forms .info .items .table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.container .forms .info .items .table .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 35px;
+}
+.container .forms .info .items p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.container .forms .info .items .btn {
+    background-color: #1BB273;
+    padding: 10px 15px;
+    font-size: 1.3em;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 220px;
+    border-radius: 25px;
+    opacity: 1;
+    transition: 0.8s;
+}
+.container .forms .info .items .btn:hover {
+    width: 260px;
+}
+.container .forms .form {
+    overflow: hidden;
+    position: absolute;
+    width: 440px;
+    height: 550px;
+    background-color: white;
+    border-radius: 40px;
+    top: -75px;
+    left: 58px;
+    opacity: 1;
+    transition: 0.8s;
+}
+/* login */
+.container .forms .form .login {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.8s;
+}
+.container .forms .form .login .table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.container .forms .form .login .table .table-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.container .forms .form .login .table .table-cell h1 {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+.container .forms .form .login .table .table-cell input {
+    width: 90%;
+    height: 50px;
+    border: 0px;
+    border-bottom: 1px solid #5E5E5E;
+    font-size: 1.3em;
+    transition: 0.3s;
+}
+.container .forms .form .login .table .table-cell input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.container .forms .form .login .table .table-cell .email {
+    margin-bottom: 20px;
+}
+.container .forms .form .login .table .table-cell .password {
+    margin-bottom: 150px;
+}
+.container .forms .form .login .table .table-cell .btn3, .btn4 {
+    background-color: #1BB273;
+    padding: 15px 15px;
+    font-size: 1.3em;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+    border-radius: 25px;
+    opacity: 1;
+    transition: 0.5s;
+    border: none;
+}
+/* register */
+.container .forms .form .register {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.8s;
+}
+.container .forms .form .register .table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.container .forms .form .register .table .table-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    justify-content: space-between;
+}
+.container .forms .form .register .table .table-cell h1 {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.container .forms .form .register .table .table-cell input {
+    width: 90%;
+    height: 50px;
+    border: 0px;
+    border-bottom: 1px solid #5E5E5E;
+    font-size: 1.3em;
+    transition: 0.3s;
+}
+.container .forms .form .register .table .table-cell input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.container .forms .form .register .table .table-cell .btn4 {
+    background-color: #1BB273;
+    padding: 15px 15px;
+    font-size: 1.3em;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+    border-radius: 25px;
+    opacity: 1;
+    transition: 0.5s;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: 0;
+}
+.container .forms .form .thanks {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.8s;
+    transition-delay: 0.5s;
+}
+.container .forms .form .thanks h1 {
+    font-size: 15em;
+    color: #199F67;
+}
+.container .forms .form .thanks a {
+    text-decoration: none;
+    color: white;
+    background-color: #1BB273;
+    padding: 15px 15px;
+    width: 80%;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* changes in js */
+.container .forms .otherside {
+    left: 502px;
+}
+.container .forms .form .goodbye {
+    opacity: 0;
+    left: -100%;
+}
+.container .forms .form .hello {
+    opacity: 1;
+    left: 0%;
+}
+.container .forms .goodbye2 {
+    opacity: 0;
+}
+.container .forms .center {
+    left: 280px;
+}
+.container .forms .form .end {
+    top: 0;
+    opacity: 1;
+}
+.reduce1 {
+    width: 400px;
+    height: 300px;
+}
+.container .background .reduce2 {
+    width: 400px;
+    height: 300px;
+}
+.container .forms .center2 {
+    top: -50px;
+    left: 45px;
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+}
